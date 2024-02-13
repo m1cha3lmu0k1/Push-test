@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Practice DOM</title>
+    </head>
+    <body>
+      <!--<button onclick="
+        document.querySelector('.js-choice').innerHTML = 'You chose: heads';
+        ">heads</button>
+
+      <button onclick="
+      document.querySelector('.js-choice').innerHTML = 'You chose: tails';">tails</button>
+
+      <p class="js-choice"></p>-->
+      <input placeholder="Name" class="js-name-input" onkeydown="
+      display(event);
+    ">
+
+      <button Onclick="
+       const inputElement = document.querySelector('.js-name-input');
+       document.querySelector('.js-text')
+       .innerHTML = `Your name is: ${inputElement.value}`;
+       ">Submit</button>
+
+
+      <p class="js-text"></p>
+    </body>
+    <script>
+      function display(){
+        if (event.key === 'Enter'){
+          const inputElement = document.querySelector('.js-name-input');
+          document.querySelector('.js-text')
+          .innerHTML = `Your name is: ${inputElement.value}`;
+      }}
+    </script>
+</html>
